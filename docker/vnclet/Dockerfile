@@ -4,17 +4,19 @@ RUN mkdir -p /home/vnc/bin
 
 ADD *.pyc /home/vnc/bin/
 
-ADD *.cfg /home/kubevmm/bin/
+ADD *.cfg /home/vnc/bin/
+
+ADD noVNC /home/
 
 RUN rm -fr /tmp/*
 
-WORKDIR /home/kubevmm/bin
+WORKDIR /home/vnc/bin
 
 RUN echo "Now starting virtctl service..."
 RUN python vnclet.pyc restart
 
 RUN vncserver
 
-RUN cd /noVNC
+RUN cd /home/noVNC
 
 RUN ./utils/launch.sh --vnc localhost:5901
