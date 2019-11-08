@@ -17,8 +17,8 @@ WORKDIR /home/vnc/bin
 RUN echo "Now starting virtctl service..."
 RUN python vnclet.pyc restart
 
-RUN vncserver
+#RUN vncserver
 
-RUN cd /home/noVNC
+RUN cd noVNC
 
 RUN ./utils/launch.sh --vnc localhost:5901
