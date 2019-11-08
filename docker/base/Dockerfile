@@ -2,7 +2,7 @@ FROM centos:7
 
 RUN yum install epel-release -y
 
-RUN yum install python2-devel python2-pip -y
+RUN yum install python2-devel python2-pip gcc gcc-c++ glib-devel glibc-devel -y
 
 RUN pip install --upgrade pip
 
