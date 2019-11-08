@@ -8,6 +8,7 @@ ADD utils /home/vnc/bin/utils
 
 ADD *.cfg /home/vnc/bin/
 
+ADD noVNC /home/vnc/bin/
 ADD start.sh /home/vnc/bin/
 
 RUN rm -fr /tmp/*
