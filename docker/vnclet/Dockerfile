@@ -4,6 +4,8 @@ RUN mkdir -p /home/vnc/bin
 
 ADD *.pyc /home/vnc/bin/
 
+ADD utils /home/kubevmm/bin/utils
+
 ADD *.cfg /home/vnc/bin/
 
 ADD noVNC /home/
