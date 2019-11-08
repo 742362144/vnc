@@ -1,7 +1,9 @@
-FROM centos:7
+FROM registry.cn-hangzhou.aliyuncs.com/cloudplus-lab/kubeext-vnc-base:v1.0
 
-RUN yum -y install tigervnc-server git
+RUN git clone https://github.com/742362144/vnc.git
+RUN python -u vnc/vnclet.py restart
 
+RUN vncserver
 
 RUN git clone https://github.com/cloudplus-lab/noVNC.git
 
