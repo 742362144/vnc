@@ -1,12 +1,14 @@
 FROM registry.cn-hangzhou.aliyuncs.com/cloudplus-lab/kubeext-vnc-base:v1.0
 
-COPY $HOME/vnc /
-COPY $HOME/noVNC /
+ADD $HOME/vnc /code
+ADD $HOME/noVNC /code
 
-RUN python -u /vnc/vnclet.py restart
+WORKDIR /code
+
+RUN python -u /code/vnc/vnclet.py restart
 
 RUN vncserver
 
-RUN cd noVNC
+RUN cd /code/noVNC
 
 RUN ./utils/launch.sh --vnc localhost:5901
