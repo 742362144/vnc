@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ec5ed6c-5d2e-457d-8c16-cd1f52335edf" name="Default Changelist" comment="" />
+    <list default="true" id="8ec5ed6c-5d2e-457d-8c16-cd1f52335edf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker/vnclet/password" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/vnclet/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/vnclet/Dockerfile" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker/vnclet/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="410">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -96,6 +99,7 @@
         <option value="$PROJECT_DIR$/vnc_token_loop.py" />
         <option value="$PROJECT_DIR$/docker/base/Dockerfile" />
         <option value="$PROJECT_DIR$/docker/vnclet/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker/vnclet/password" />
       </list>
     </option>
   </component>
@@ -118,6 +122,17 @@
             <path>
               <item name="vnc" type="b2602c69:ProjectViewProjectNode" />
               <item name="vnc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vnc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vnc" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vnc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vnc" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="vnclet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vnc" type="b2602c69:ProjectViewProjectNode" />
@@ -312,12 +327,12 @@
       <workItem from="1567386137150" duration="58000" />
       <workItem from="1568964921738" duration="617000" />
       <workItem from="1571917425117" duration="2289000" />
-      <workItem from="1573180716310" duration="9057000" />
+      <workItem from="1573180716310" duration="9463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34890000" />
+    <option name="totallyTimeSpent" value="35296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1432" y="-8" width="1382" height="744" extended-state="6" />
@@ -435,10 +450,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker/vnclet/password">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker/vnclet/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="410">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
