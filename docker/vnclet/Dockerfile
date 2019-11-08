@@ -1,7 +1,7 @@
 FROM registry.cn-hangzhou.aliyuncs.com/cloudplus-lab/kubeext-vnc-base:v1.0
 
-ADD vnc /
-ADD noVNC /
+COPY vnc /
+COPY noVNC /
 
 WORKDIR /code
 
