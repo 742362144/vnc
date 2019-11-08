@@ -8,8 +8,8 @@ RUN pip install --upgrade pip
 
 RUN pip install --ignore-installed kubernetes xmljson xmltodict watchdog pyyaml pyinstaller grpcio grpcio-tools protobuf psutil
 
-RUN yum -y install tigervnc-server
+RUN yum -y install tigervnc-server git
 
-RUN git clone https://github.com/cloudplus-lab/noVNC.git
+
 
 
