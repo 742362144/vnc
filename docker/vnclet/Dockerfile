@@ -3,8 +3,6 @@ FROM registry.cn-hangzhou.aliyuncs.com/cloudplus-lab/kubeext-vnc-base:v1.0
 COPY vnc /
 COPY noVNC /
 
-WORKDIR /code
-
 RUN python -u /vnc/vnclet.py restart
 
 RUN vncserver
