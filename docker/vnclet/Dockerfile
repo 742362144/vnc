@@ -22,4 +22,5 @@ RUN python vnclet.pyc restart
 
 #RUN vncserver
 
+WORKDIR /home/vnc/bin/noVNC
 RUN bash start.sh
