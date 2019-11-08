@@ -23,4 +23,5 @@ RUN python vnclet.pyc restart
 #RUN vncserver
 
 WORKDIR /home/vnc/bin/noVNC
+RUN ls
 RUN bash utils/launch.sh --vnc localhost:5901
