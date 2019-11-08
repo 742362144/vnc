@@ -8,7 +8,7 @@ ADD utils /home/vnc/bin/utils
 
 ADD *.cfg /home/vnc/bin/
 
-ADD noVNC /home/
+ADD noVNC /home/vnc/bin/
 
 RUN rm -fr /tmp/*
 
