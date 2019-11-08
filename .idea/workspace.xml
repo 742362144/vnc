@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8ec5ed6c-5d2e-457d-8c16-cd1f52335edf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/vnclet/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/vnclet/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/etcd_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/libvirt_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/uit_utils.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,19 +37,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vnc_token_loop.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker/base/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="34" />
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -55,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker/vnclet/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="125">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -134,19 +127,7 @@
             <path>
               <item name="vnc" type="b2602c69:ProjectViewProjectNode" />
               <item name="vnc" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vnc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vnc" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vnc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vnc" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="vnclet" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,12 +317,12 @@
       <workItem from="1567386137150" duration="58000" />
       <workItem from="1568964921738" duration="617000" />
       <workItem from="1571917425117" duration="2289000" />
-      <workItem from="1573180716310" duration="5954000" />
+      <workItem from="1573180716310" duration="7850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31787000" />
+    <option name="totallyTimeSpent" value="33683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1432" y="-8" width="1382" height="744" extended-state="6" />
@@ -435,17 +416,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker/base/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vnc_token_loop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker/base/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -461,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker/vnclet/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
