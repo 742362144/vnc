@@ -1,25 +1,21 @@
 FROM registry.cn-hangzhou.aliyuncs.com/cloudplus-lab/kubeext-vnc-base:v1.0
 
-RUN mkdir -p /home/vnc/bin
+RUN mkdir -p /root/vnc
 
-ADD *.pyc /home/vnc/bin/
+ADD *.pyc /root/vnc
 
-ADD utils /home/vnc/bin/utils
+ADD utils /root/vnc/utils
 
-ADD *.cfg /home/vnc/bin/
+ADD *.cfg /root/vnc/
 
-ADD noVNC /home/vnc/bin/
-ADD start.sh /home/vnc/bin/
+ADD start.sh /root/
+
+WORKDIR /root
+
+RUN git clone https://github.com/cloudplus-lab/noVNC.git
 
 RUN rm -fr /tmp/*
 
-WORKDIR /home/vnc/bin
+CMD vncserver
 
-RUN echo "Now starting virtctl service..."
-RUN python vnclet.pyc restart
-
-#ADD passwd $HOME/.vnc/
-
-#RUN vncserver
-
-RUN bash start.sh
+CMD bash start.sh
