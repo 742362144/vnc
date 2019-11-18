@@ -2,7 +2,7 @@ FROM registry.cn-hangzhou.aliyuncs.com/cloudplus-lab/kubeext-vnc-base:v1.0
 
 RUN mkdir -p /root/vnc
 
-ADD *.pyc /root/vnc
+ADD *.pyc /root/vnc/
 
 ADD utils /root/vnc/utils
 
