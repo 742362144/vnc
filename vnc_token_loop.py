@@ -51,7 +51,7 @@ LOG = '/var/log/vnclet.log'
 logger = logger.set_logger(os.path.basename(__file__), LOG)
 
 
-DEFAULT_TT_FILE_PATH = '/root/noVNC/websockify/token/token.conf'
+TOKEN_PATH = os.getenv('TOKEN_PATH')
 
 def main():
     logger.debug("---------------------------------------------------------------------------------")
@@ -140,13 +140,14 @@ def write_token_to_file():
                     for token in all_token:
                         if node_ip['nodeName'] == token['nodeName']:
                             result.append(token['name'] + ': ' + node_ip['ip'] + ':' + str(token['port']) + '\n')
-
-                file_dir = os.path.split(DEFAULT_TT_FILE_PATH)[0]
+                if TOKEN_PATH is None:
+                    logger.debug("error: can not get toker path, exit,,,,,,,")
+                file_dir = os.path.dirname(TOKEN_PATH)
                 if not os.path.isdir(file_dir):
                     os.makedirs(file_dir)
 
                 print result
-                with open(DEFAULT_TT_FILE_PATH, "w") as f:
+                with open(TOKEN_PATH, "w") as f:
                     for linne in result:
                         f.write(linne)
             except Exception, e:
