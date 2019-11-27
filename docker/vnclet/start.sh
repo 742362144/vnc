@@ -2,5 +2,5 @@
 
 python /home/vnc/vnclet.py restart
 
-cd /root/noVNC
+cd /home/noVNC
 ./utils/launch.sh --vnc localhost:5901
