@@ -1,16 +1,16 @@
 FROM registry.cn-hangzhou.aliyuncs.com/cloudplus-lab/kubeext-vnc-base:v1.0
 
-RUN mkdir -p /root/vnc
+RUN mkdir -p /home/vnc
 
-ADD *.pyc /root/vnc/
+ADD *.pyc /home/vnc/
 
-ADD utils /root/vnc/utils
+ADD utils /home/vnc/utils
 
-ADD *.cfg /root/vnc/
+ADD *.cfg /home/vnc/
 
-ADD start.sh /root/
+ADD start.sh /home/
 
-WORKDIR /root
+WORKDIR /home
 
 RUN git clone https://github.com/cloudplus-lab/noVNC.git
 
